@@ -6,8 +6,8 @@
     grid-template-columns: 100px 100px 100px;
     grid-auto-flow: column;
     place-content: center;
-    /* width: 500px; */
-    /* height: 500px; */
+    width: 500px;
+    height: 500px;
 }
 .item {
     background-color: darkgreen;
