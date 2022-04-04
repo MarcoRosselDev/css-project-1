@@ -2,11 +2,29 @@
     border: 2px solid black;
     background-color: darkorange;
     display: grid;
-    grid-template-rows: 70px 70px;
-    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 130px 130px 130px;
     place-content: center;
 }
 .item {
     border: 2px solid white;
     background-color: chartreuse;
+}
+.item-1 {
+    border: 3px solid rgb(54, 58, 47);
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item-2 {
+    border: 3px solid rgb(206, 35, 35);
+    background-color: rgb(255, 0, 204);
+    grid-row-start: 2;
+    grid-row-end: 4;      /* queda = con grid-row: 2 / 4;    */
+}
+.item-3 {
+    border: 3px solid skyblue;
+    background-color: rgb(52, 177, 58);
+    grid-row: 2 / 4;    /* queda = grid-row-start: 2; pero es más c*/
+    grid-column: 2 / 4;
 }
