@@ -9,8 +9,8 @@
     background-color: orange;
     height: 500px;
     display: grid;
-    grid-template-columns: 100px 200px;
-    grid-template-rows: 100px 200px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
     place-content: center;
     gap: 5px;
 }
@@ -18,17 +18,32 @@
     border: 2px solid red;
     background-color: chartreuse;
     display: grid;
-    grid-template-rows: max-content;
-    /* grid-template-columns: max-content; */
+    grid-template-columns:;
 }
 .elemento-1 {
     background-color: rgb(125, 125, 244);
+    display: grid;
+    height: 50%;
+    width: 50%;
+    justify-self: start;
+    align-self: start;
 }
 .elemento-2 {
     background-color: rgb(29, 150, 198);
+    display: grid;
+    height: 50%;
+    width: 50%;
+    justify-self: start;
+    align-self: end;
 }
 .elemento-3 {
     background-color: rgb(22, 112, 169);
+    display: grid;
+    height: 50%;
+    width: 50%;
+    justify-self: end;
+    align-self: start;
+    justify-items: end;
 }
 .elemento-4 {
     display: grid;
@@ -36,4 +51,5 @@
     height: 50%;
     width: 50%;
     justify-self: end;
+    align-self: end;
 }
