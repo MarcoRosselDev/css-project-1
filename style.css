@@ -1,8 +1,3 @@
-.contenedor-main {
-    border: 1px solid blue;
-    display: grid;
-    grid-template-rows: auto;
-}
 .contenedor {
     background-color: cadetblue;
     border: 2px solid black;
@@ -11,18 +6,10 @@
     grid-template-columns: 100px 100px 100px;
     grid-auto-flow: column;
     place-content: center;
-    width: 500px;
-    height: 500px;
+    /* width: 500px; */
+    /* height: 500px; */
 }
 .item {
     background-color: darkgreen;
     border: 2px solid red;
-}
-.contenedor-2 {
-    background-color: chartreuse;
-    border: 2px solid black;
-}
-.item-exercise-2{
-    background-color: cornflowerblue;
-    border: 1px solid red;
 }
