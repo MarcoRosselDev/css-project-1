@@ -3,9 +3,43 @@
     background-color: antiquewhite;
     height: 100vh;
     display: grid;
-
+    place-content: center;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+    "one two two"
+    "three three four"
+    "five six seven";
 }
 .item {
-    border: 1px solid blue;
+    border: 1px solid none;
     font-size: 2rem;
+}
+.item-1 {
+    background-color: rgb(153, 247, 153);
+    grid-area: one;
+}
+.item-2 {
+    background-color: rgb(143, 196, 64);
+    grid-area: two;
+}
+.item-3 {
+    background-color: green;
+    grid-area: three;
+}
+.item-4 {
+    background-color: rgb(153, 247, 153);
+    grid-area: four;
+}
+.item-5 {
+    background-color: rgb(153, 247, 153);
+    grid-area: five;
+}
+.item-6 {
+    background-color: rgb(143, 196, 64);
+    grid-area: six;
+}
+.item-7 {
+    background-color: green;
+    grid-area: seven;
 }
