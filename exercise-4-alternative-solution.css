@@ -1,0 +1,33 @@
+.container {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+.item-1 {
+    background-color: lightgreen;
+}
+.item-2 {
+    background-color: rgb(127, 190, 32);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item-3 {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item-4 {
+    background-color: lightgreen;
+}
+.item-5 {
+    background-color: lightgreen;
+}
+.item-6 {
+    background-color: rgb(127, 190, 32);
+}
+.item-7 {
+    background-color: green;
+}
