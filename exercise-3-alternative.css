@@ -1,0 +1,29 @@
+.container {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+    grid-template-areas: 
+        "exercise1 exercise1 exercise1"
+        "exercise2 main main"
+        "exercise2 main main";
+}
+.item {
+    border: 1px solid red;
+    font-size: 3rem;
+}
+.item-1 {
+    background-color: aquamarine;
+    grid-area: exercise1;
+}
+.item-2 {
+    background-color: cadetblue;
+    grid-area: exercise2;
+}
+.item-3 {
+    background-color: gold;
+    grid-area: main;
+}
