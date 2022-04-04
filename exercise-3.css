@@ -5,6 +5,7 @@
     grid-template-rows: 50px 50px 50px;
     grid-template-columns: 130px 130px 130px;
     place-content: center;
+    height: 100vh;
 }
 .item {
     border: 2px solid white;
@@ -25,6 +26,5 @@
 .item-3 {
     border: 3px solid skyblue;
     background-color: rgb(52, 177, 58);
-    grid-row: 2 / 4;    /* queda = grid-row-start: 2; pero es más c*/
-    grid-column: 2 / 4;
-}
+    grid-area: 2/2/4/4;  /* metodo ahun más abreviado*/
+}                       /*fila ini/column ini/ fila fin/ colum fin*/
