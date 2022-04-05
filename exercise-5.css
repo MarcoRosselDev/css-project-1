@@ -3,9 +3,9 @@
     height: 100vh;
     display: grid;
     place-content: center;
-    grid-template-columns: 45px 75px 50px;
-    grid-template-rows: 100px 100px 100px;
-}
+    grid-template-columns: minmax(35px, 150px) 75px minmax(35px,170px); /*45px 75px 50px (antes)*/
+    grid-template-rows: repeat(3, auto);/*100px 100px 100px (antes)*/
+}   /*con esto se repite 3 y se acomoda a su contenido*/
 .item {
     border: 1px solid gray;
 }
