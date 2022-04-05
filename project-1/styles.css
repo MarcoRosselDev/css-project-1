@@ -28,6 +28,7 @@ main {
     height: 40px;
     width: 200px;
     justify-self: center;
+    border: none;
 } 
 .hero img{
     width: 100%;
