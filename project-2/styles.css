@@ -1,34 +1,35 @@
-* {
-    margin: 0 ;
-}
 .dorico {
-    margin: 50px;
+    /* margin: 50px; */
     background-color: azure;
     border: 1px solid grey;
-    height: 400px;
+    /* height: 400px; */
     display: grid;
-    place-content: center;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* place-content: center; */
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
-    "abc abc abc vacio"
-    "abc abc abc abc"
+    "fronton fronton fronton fronton"
+    "fronton fronton fronton fronton"
     "cornisa cornisa cornisa cornisa"
-    "triglifo triglifo triglifo vacio"
-    "triglifo triglifo triglifo vacio"
-    "arquitrabe arquitrabe arquitrabe vacio"
-    "arquitrabe arquitrabe arquitrabe vacio"
-    "vacio capitel capitel vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio"
-    "vacio fuste fuste vacio";
+    "triglifo triglifo triglifo triglifo"
+    "triglifo triglifo triglifo triglifo"
+    "arquitrabe arquitrabe arquitrabe arquitrabe"
+    "arquitrabe arquitrabe arquitrabe arquitrabe"
+    ;
 }
 .fronton {
     background-color: rgb(207, 72, 72);
-    grid-area: abc;
+    grid-area: fronton;
+}
+.cornisa {
+    background-color: greenyellow;
+    grid-area: cornisa;
+}
+.triglifo {
+    background-color: aquamarine;
+    grid-area: triglifo;
+}
+.arquitrabe {
+    background-color: blueviolet;
+    grid-area: arquitrabe;
 }
