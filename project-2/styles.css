@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0 ;
 }
 .dorico {
     margin: 50px;
@@ -8,11 +8,11 @@
     height: 400px;
     display: grid;
     place-content: center;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "fronton fronton fronton vacio"
-    "fronton fronton fronton fronton"
+    "abc abc abc vacio"
+    "abc abc abc abc"
     "cornisa cornisa cornisa cornisa"
     "triglifo triglifo triglifo vacio"
     "triglifo triglifo triglifo vacio"
@@ -30,5 +30,5 @@
 }
 .fronton {
     background-color: rgb(207, 72, 72);
-    grid-area: fronton;
+    grid-area: abc;
 }
