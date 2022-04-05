@@ -1,0 +1,9 @@
+* {
+    margin: 0 auto;
+}
+.dorico {
+    margin: 50px;
+    background-color: azure;
+    border: 1px solid grey;
+    height: 400px;
+}
