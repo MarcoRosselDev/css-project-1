@@ -6,4 +6,29 @@
     background-color: azure;
     border: 1px solid grey;
     height: 400px;
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fronton fronton fronton vacio"
+    "fronton fronton fronton fronton"
+    "cornisa cornisa cornisa cornisa"
+    "triglifo triglifo triglifo vacio"
+    "triglifo triglifo triglifo vacio"
+    "arquitrabe arquitrabe arquitrabe vacio"
+    "arquitrabe arquitrabe arquitrabe vacio"
+    "vacio capitel capitel vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio"
+    "vacio fuste fuste vacio";
+}
+.fronton {
+    background-color: rgb(207, 72, 72);
+    grid-area: fronton;
 }
