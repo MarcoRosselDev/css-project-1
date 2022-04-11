@@ -1,9 +1,29 @@
+body{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "one two"
+    "three four"
+    ;
+}
 .exercise-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
+    justify-self: center;
     font-family: 'lato', sans-serif;
     width: 550px;
+    grid-area: two;
+}
+.exercise-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-self: center;
+    font-family: 'lato', sans-serif;
+    width: 550px;
+    grid-area: one;
 }
 .container {
     background-color: aquamarine;
@@ -44,6 +64,31 @@
 .element9 {
     margin: 120px 120px;
 }
+/*  EXERCICE-2
+        Propiedades:
+
+
+            text-align          :left|right|center|justify|initial|inherit;     (alinea texto horizontalmente)
+            
+            vertical-align      :baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+                        (alinea texto verticalmente)
+            line-height         :normal|number|length|initial|inherit;      (alinea los altos en los textos)
+
+            EJERCICIO-2: aplicando line-height.
+            ____________________________.
+            |__|      |__      !        !
+            |         |__!     !__      |
+            |_________|________|__|_____!
+            |  |__|   |   __   !        !
+            |         |  !__!  !   __   !
+            |_________|________|__|__|__|
+            |      |__|      __!        !
+            |         |     |__|      __|
+            |_________|________|_____|__|
+            
+ */
+
+
 /* 
         COMENZAMOS CON MARGIN:
         -para conseguir el resultado del ejercicio nesecitamos las siguientes propiedades:
