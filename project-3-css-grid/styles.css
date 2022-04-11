@@ -2,6 +2,7 @@ body{
     background-color: cadetblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
     grid-template-areas: 
     "one two"
     "three four"
@@ -38,58 +39,9 @@ body{
     box-sizing: border-box;
     background-color: antiquewhite;
 }
-.element1 {  /* por defecto esta en top left */
-}
-.element2 {
-    margin: 60px 0;
-}
-.element3 {
-    margin: 120px 0;
-}
-.element4 {
-    margin: 0 60px;
-}
-.element5 {
-    margin: 60px;
-}
-.element6 {
-    margin: 120px 60px;
-}
-.element7 {
-    margin: 0 120px;
-}
-.element8 {
-    margin: 60px 120px;
-}
-.element9 {
-    margin: 120px 120px;
-}
-/*  EXERCICE-2
-        Propiedades:
+    /* instruciones -1 */
 
-
-            text-align          :left|right|center|justify|initial|inherit;     (alinea texto horizontalmente)
-            
-            vertical-align      :baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
-                        (alinea texto verticalmente)
-            line-height         :normal|number|length|initial|inherit;      (alinea los altos en los textos)
-
-            EJERCICIO-2: aplicando line-height.
-            ____________________________.
-            |__|      |__      !        !
-            |         |__!     !__      |
-            |_________|________|__|_____!
-            |  |__|   |   __   !        !
-            |         |  !__!  !   __   !
-            |_________|________|__|__|__|
-            |      |__|      __!        !
-            |         |     |__|      __|
-            |_________|________|_____|__|
-            
- */
-
-
-/* 
+    /* 
         COMENZAMOS CON MARGIN:
         -para conseguir el resultado del ejercicio nesecitamos las siguientes propiedades:
                                         esto se veria asi:
@@ -118,3 +70,123 @@ body{
             |         |     |__|      __|
             |_________|________|_____|__|
 */
+
+/* ejercicio-1 (margin) */
+    .element1 {  /* por defecto esta en top left */
+    }
+    .element2 {
+        margin: 60px 0;
+    }
+    .element3 {
+        margin: 120px 0;
+    }
+    .element4 {
+        margin: 0 60px;
+    }
+    .element5 {
+        margin: 60px;
+    }
+    .element6 {
+        margin: 120px 60px;
+    }
+    .element7 {
+        margin: 0 120px;
+    }
+    .element8 {
+        margin: 60px 120px;
+    }
+    .element9 {
+        margin: 120px 120px;
+    }
+    /* instrucciones -2 */
+
+    /*  EXERCICE-2
+        Propiedades:
+
+
+            text-align          :left|right|center|justify|initial|inherit;     (alinea texto horizontalmente)
+            
+            vertical-align      :baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+                        (alinea texto verticalmente)
+            line-height         :normal|number|length|initial|inherit;      (alinea los altos en los textos)
+
+            EJERCICIO-2: aplicando line-height.
+            ____________________________.
+            |__|      |__      !        !
+            |         |__!     !__      |
+            |_________|________|__|_____!
+            |  |__|   |   __   !        !
+            |         |  !__!  !   __   !
+            |_________|________|__|__|__|
+            |      |__|      __!        !
+            |         |     |__|      __|
+            |_________|________|_____|__|
+            
+ */
+.container-1{
+    background-color: aquamarine;
+    width: 180px;
+    height: 180px;
+    text-align: left;
+    line-height: 180px;
+}
+    .element-1 {
+        @extend .elemento;
+        display: inline-block;
+        line-height: 45px;
+        vertical-align: top;
+    }
+    .element-2 {
+        display: inline-block;
+        line-height: 20px;
+        vertical-align: middle;
+    }
+    .element-3 {
+        display: inline-block;
+        line-height: 20px;
+        vertical-align: bottom;
+    }
+.container-2{
+    background-color: aquamarine;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    line-height: 180px;
+}
+.element-4 {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top;
+}
+.element-5 {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.element-6 {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+.container-3 {
+    background-color: aquamarine;
+    width: 180px;
+    height: 180px;
+    text-align: right;
+    line-height: 180px;
+}
+.element-7 {
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: top;
+}
+.element-8 {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.element-9 {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: bottom;
+}
