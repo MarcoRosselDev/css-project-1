@@ -1,0 +1,75 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-family: 'lato', sans-serif;
+    width: 550px;
+}
+.container {
+    background-color: aquamarine;
+    width: 180px;
+    height: 180px;
+}
+.elemento {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+.element1 {  /* por defecto esta en top left */
+}
+.element2 {
+    margin: 60px 0;
+}
+.element3 {
+    margin: 120px 0;
+}
+.element4 {
+    margin: 0 60px;
+}
+.element5 {
+    margin: 60px;
+}
+.element6 {
+    margin: 120px 60px;
+}
+.element7 {
+    margin: 0 120px;
+}
+.element8 {
+    margin: 60px 120px;
+}
+.element9 {
+    margin: 120px 120px;
+}
+/* 
+        COMENZAMOS CON MARGIN:
+        -para conseguir el resultado del ejercicio nesecitamos las siguientes propiedades:
+                                        esto se veria asi:
+
+            margin-top              margin-top: 10px;
+            margin-right            margin-right: 15px;
+            margin-bottom           margin-bottom: 20px;
+            margin-left             margin-left: 25px;
+
+            aplicando de la manera corta:
+
+            margin: 10px 15px 20px 25px;
+
+            funciona en el sentido de las manecillas del reloj
+            top-right-bottom-left.
+
+            EJERCICIO-1: aplicando margin.
+            ____________________________.
+            |__|      |__      !        !
+            |         |__!     !__      |
+            |_________|________|__|_____!
+            |  |__|   |   __   !        !
+            |         |  !__!  !   __   !
+            |_________|________|__|__|__|
+            |      |__|      __!        !
+            |         |     |__|      __|
+            |_________|________|_____|__|
+*/
